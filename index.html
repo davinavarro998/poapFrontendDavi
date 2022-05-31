@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>POAP</title>
+</head>
+<body>
+    <header>
+        <h1>Poap 2nd Market</h1>
+        <h2 id="contract_address"></h2>
+        <h3>Current number of attendees = <span id="current_number"></span></h3>
+        <h3>Total number of attendees = <span id="total_number"></span></h3>
+        <button id="connect_button">Connect wallet</button>
+    </header>
+    <main>
+        <div class="container">
+            <button id="btn1">Transfer Ownership (only owner)</button>
+            <input id="inp1" type="text" placeholder="new owner address">
+        </div>
+        <ul id="address_list">
+        </ul>
+        <div class="container">
+            <button id="btn2">Add attendee</button>
+            <input id="inp2" type="text" placeholder="new attendee address">
+        </div>
+        <div class="container">
+            <button id="btn3">Add all (only owner)</button>
+            <button id="clear_btn">Clear Addressess</button>
+        </div>
+        <div class="container">
+            <button id="btn4">Claim POAP</button>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.0/web3.min.js"
+        integrity="sha512-RGPKVfQewHGfk9yaB7ThGPKAQU+civS5awsfStLg22jrWbqgDkNzPtIwNFpFApr3ccjB730SRxi+KnDjhIuTpw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

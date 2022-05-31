@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(14, 14, 70);
+}
+
+button{
+    display:block;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    font-weight:bold;
+    border-radius: 20px;
+    font-size:16px;
+    margin: 5px;
+}
+
+input[type="text"]{
+    width: 100%;
+    max-width:300px;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+
+header h1, header h2, header h3{
+    text-align: center;
+    color: #fff;
+    margin: 20px;
+}
+
+
+header button{
+    display: block;
+    width: 100%;
+    max-width:300px;
+    margin: 50px auto;
+    background-color: rgb(5, 93, 93);
+}
+
+main .container{
+    max-width: 700px;
+    margin: 70px auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display:none;
+}
+
+#address_list {
+    color: #fff;
+    text-align: center;
+    list-style: none;
+    font-size:32px;
+}
+
+#btn1{
+    background-color:green;
+}
+
+#btn2{
+    background-color:rgb(127, 127, 0);
+}
+
+
+#btn3{
+    background-color:rgb(97, 55, 55);
+}
+
+#clear_btn{
+    background-color:rgb(135, 97, 0);
+}
+
+#btn4{
+    background-color:goldenrod;
+}
+
+
+
+@media screen and (max-width:768px) {
+    header{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width:560px){
+    header{
+        font-size:10px;
+    }
+    #address_list{
+        font-size:10px;
+    }
+}
+
+@media screen and (max-width:420px){
+    header{
+        font-size:8px;
+    }
+
+    #address_list{
+        font-size:8px;
+    }
+}
+
+
+@media screen and (max-width:400px){
+    header{
+        font-size:7px;
+    }
+
+    #address_list{
+        font-size:7px;
+    }
+}
